@@ -1,12 +1,8 @@
 FROM ubuntu:latest
 
-COPY cpu_monitor.sh /
+COPY cpu_count.sh /
 
-RUN chmod +x /cpu_monitor.sh
+RUN chmod +x /cpu_count.sh
 
-RUN apt-get install
-
-RUN apt-get update
-
-CMD ["/cpu_monitor.sh"]
+CMD ["/cpu_count.sh"]
 
